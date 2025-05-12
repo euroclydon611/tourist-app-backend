@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProxiBiz Activation Email</title>
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #fafafa;
+        color: #222222;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      table td {
+        vertical-align: top;
+      }
+
+      /* Layout */
+      .email-wrapper {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      .email-header {
+        background-image: linear-gradient(to right, #006080, #006080, #009cb6);
+        padding: 24px;
+        color: #ffffff;
+      }
+
+      .email-body {
+        background-color: #ffffff;
+        padding: 24px;
+      }
+
+      .email-footer {
+        background-image: linear-gradient(to right, #006080, #006080, #009cb6);
+        padding: 24px;
+        color: #ffffff;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: #f44336;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <h1>Welcome to ProxiBiz</h1>
+      </div>
+
+      <div class="email-body">
+        <p>Hello <%=seller.name%>,</p>
+        <p>
+          Thank you for registering with ProxiBiz as a Vendor. To activate
+          your shop, please click the following link:
+        </p>
+        <a href="<%=activationUrl%>">Activate Your Account</a>
+        <p>
+          This link will expire in 5 minutes. If you didn't register with an
+          ProxiBiz account, please ignore this email.
+        </p>
+      </div>
+      <div class="email-footer">
+        <p>
+          If you have any questions, please don't hesitate to contact us at
+          <a href="mailto: euroclydon611@gmail.com">euroclydon611@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

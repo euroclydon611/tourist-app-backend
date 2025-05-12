@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Ghana Activation Email</title>
+
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #f3f4f6;
+        color: #1f2937;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 24px;
+      }
+
+      .email-wrapper {
+        margin: 0 auto;
+        max-width: 600px;
+      }
+
+      .email-header {
+        background-image: linear-gradient(to right, #0d9488, #14b8a6);
+        padding: 24px;
+        color: #ffffff;
+      }
+
+      .email-body {
+        background-color: #ffffff;
+        padding: 24px;
+      }
+
+      .email-footer {
+        background-image: linear-gradient(to right, #0d9488, #14b8a6);
+        padding: 24px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: #f97316;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <h1>Welcome to Discover Ghana</h1>
+      </div>
+
+      <div class="email-body">
+        <p>Hello <%= user.name %>,</p>
+        <p>
+          Thank you for signing up to Discover Ghana — your gateway to amazing destinations, hidden gems, and cultural experiences across Ghana!
+        </p>
+        <p>
+          To activate your account and start exploring, please click the button below:
+        </p>
+        <a class="button" href="<%= activationUrl %>">Activate Your Account</a>
+        <p>
+          This link will expire in 5 minutes. If you didn’t sign up for Discover Ghana, feel free to ignore this email.
+        </p>
+      </div>
+
+      <div class="email-footer">
+        <p>
+          Questions? Reach out to us at 
+          <a href="mailto:support@discoverghana.com">support@discoverghana.com</a>
+        </p>
+        <p>We’re here to help you discover something unforgettable.</p>
+      </div>
+    </div>
+  </body>
+</html>
