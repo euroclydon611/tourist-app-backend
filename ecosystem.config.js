@@ -2,7 +2,7 @@
 module.exports = {
   apps: [
     {
-      name: "tourism-be",
+      name: "tourism-reginald-be",
       script: "build/server.js",
       exec_mode: "cluster",
       instances: "1",
