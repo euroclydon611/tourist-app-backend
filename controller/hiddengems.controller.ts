@@ -133,7 +133,6 @@ export const fetchHiddengems = catchAsyncErrors(
   async (req: Request, res: Response, next: NextFunction) => {
     const { page = 1, limit = 10, search = "", lat, lng } = req.query;
 
-
     const pageNum = parseInt(page as string);
     const limitNum = parseInt(limit as string);
     const skip = (pageNum - 1) * limitNum;
@@ -241,8 +240,6 @@ export const hiddengemReview = catchAsyncErrors(
         (rev: any) => rev.user._id === req.user?._id
       );
 
-      console.log("isReviewed", isReviewed);
-
       if (isReviewed) {
         destination?.reviews.forEach((rev: any) => {
           if (rev?.user._id === req.user?._id) {
@@ -261,7 +258,9 @@ export const hiddengemReview = catchAsyncErrors(
         console.log("avg", avg);
       });
 
-      destination?.rating = avg / destination.reviews.length;
+      if (destination) {
+        destination.rating = (avg / destination.reviews.length).toString();
+      }
 
       console.log("experience ratings", avg / destination.reviews.length);
 

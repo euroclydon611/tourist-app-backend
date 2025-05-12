@@ -213,7 +213,6 @@ export const experiencReview = catchAsyncErrors(
         experience.rating = (avg / experience.reviews.length).toString();
       }
 
-      console.log("experience ratings", avg / experience.reviews.length);
 
       await experience?.save({ validateBeforeSave: false });
 
