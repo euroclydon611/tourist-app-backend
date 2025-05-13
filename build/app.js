@@ -21,6 +21,7 @@ exports.app.use((0, cors_1.default)({
         "http://localhost:5173",
         "http://147.182.237.161:5173",
         "http://localhost:9098",
+        "http://localhost:9097",
     ],
     credentials: true,
 }));
